@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>notahuman — An autonomous AI operating company · Human Design Group</title>
+<meta name="description" content="notahuman is a coordinated team of specialized AI agents that runs a real organization end to end — engineering, strategy, operations, and infrastructure — behind one governed, self-hosted platform. Built by Human Design Group." />
+<meta name="theme-color" content="#16181c" />
+<meta property="og:title" content="notahuman — An autonomous AI operating company" />
+<meta property="og:description" content="A coordinated team of specialized AI agents that runs a real organization end to end. Built by Human Design Group." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://thehumandesigngroup.com" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-head" data-head>
+  <div class="wrap head-inner">
+    <a class="brand" href="#top" aria-label="Human Design Group — home">
+      <img src="./assets/logo/hdg-logo.png"
+           srcset="./assets/logo/hdg-logo.png 1x, ./assets/logo/hdg-logo@2x.png 2x, ./assets/logo/hdg-logo@3x.png 3x"
+           alt="Human Design Group" class="brand-mark" />
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#problem" class="nav-link"><span>Why</span></a>
+      <a href="#platform" class="nav-link"><span>Platform</span></a>
+      <a href="#how" class="nav-link"><span>How it works</span></a>
+      <a href="#who" class="nav-link"><span>Who it's for</span></a>
+    </nav>
+    <a href="#contact" class="btn btn-sm" data-magnetic>Get in touch</a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false" data-menu></button>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas class="hero-net" data-net aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <p class="eyebrow reveal" data-reveal>
+      <span class="dot"></span> notahuman <em>— a Human Design Group company</em>
+    </p>
+    <h1 class="hero-title">
+      <span class="line reveal" data-reveal data-d="1">An autonomous</span>
+      <span class="line reveal" data-reveal data-d="2">AI operating <span class="ink-accent">company.</span></span>
+    </h1>
+    <p class="hero-lede reveal" data-reveal data-d="3">
+      A coordinated team of specialized AI agents that runs a real organization
+      end&nbsp;to&nbsp;end — engineering, strategy, operations, and infrastructure —
+      behind one governed, self-hosted platform.
+    </p>
+    <div class="hero-cta reveal" data-reveal data-d="4">
+      <a href="#contact" class="btn" data-magnetic>Get in touch<i class="arr">→</i></a>
+      <a href="#platform" class="btn btn-ghost" data-magnetic>See the platform</a>
+    </div>
+  </div>
+  <div class="hero-scroll reveal" data-reveal data-d="5"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- PROBLEM -->
+<section class="band problem" id="problem">
+  <div class="wrap">
+    <div class="band-head">
+      <span class="kicker" data-reveal>The problem</span>
+      <h2 class="h2 measure" data-reveal>AI tools are islands. <span class="muted">Real work needs a team.</span></h2>
+    </div>
+    <ol class="grid-3 problems">
+      <li class="prob" data-reveal>
+        <span class="num">01</span>
+        <h3>Chatbots, not coworkers</h3>
+        <p>Today's AI tools answer one prompt at a time. They don't coordinate, hand off work, or own an outcome — the human is the integration layer.</p>
+      </li>
+      <li class="prob" data-reveal data-d="1">
+        <span class="num">02</span>
+        <h3>One model, one point of failure</h3>
+        <p>Most stacks are bolted to a single provider. When it's down, rate-limited, or out of credits, everything stops.</p>
+      </li>
+      <li class="prob" data-reveal data-d="2">
+        <span class="num">03</span>
+        <h3>The leverage gap</h3>
+        <p>Solo founders and lean teams can't hire a full org. They need the output of a company without the headcount or the cost.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="band solution" id="solution">
+  <div class="wrap">
+    <div class="band-head center">
+      <span class="kicker" data-reveal>The solution</span>
+      <h2 class="h2 xl" data-reveal>Not a tool. <em>A whole AI organization.</em></h2>
+      <p class="band-lede measure" data-reveal>notahuman is a C-suite of specialized AI agents that run business functions end to end — engineering, strategy, operations, and infrastructure — coordinating with each other behind one governed platform.</p>
+    </div>
+    <div class="grid-3 pillars">
+      <article class="pillar" data-reveal>
+        <h3>Deploy a workforce, not a prompt</h3>
+        <p>A founder gets a working team on day one.</p>
+      </article>
+      <article class="pillar" data-reveal data-d="1">
+        <h3>Coordinated, not siloed</h3>
+        <p>Agents delegate, hand off, and verify each other's work.</p>
+      </article>
+      <article class="pillar" data-reveal data-d="2">
+        <h3>Governed by design</h3>
+        <p>Every action follows explicit, auditable policies.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM (dark) -->
+<section class="band platform dark" id="platform">
+  <div class="wrap">
+    <div class="band-head">
+      <span class="kicker" data-reveal>The platform</span>
+      <h2 class="h2" data-reveal>One stack: <span class="seq"><span>route</span>, <span>govern</span>, <span>remember</span>, <span>orchestrate</span>.</span></h2>
+    </div>
+    <div class="grid-2 features">
+      <article class="feat" data-reveal>
+        <span class="feat-i" data-glyph="gateway"></span>
+        <h3>Model gateway</h3>
+        <p>A self-hosted gateway (Bifrost) routes every request across providers with automatic, ordered failover.</p>
+      </article>
+      <article class="feat" data-reveal data-d="1">
+        <span class="feat-i" data-glyph="shield"></span>
+        <h3>Governance precepts</h3>
+        <p>Agents operate under explicit, verifiable policies — integrity, accountability, and evidence-first behavior.</p>
+      </article>
+      <article class="feat" data-reveal data-d="2">
+        <span class="feat-i" data-glyph="memory"></span>
+        <h3>Persistent memory</h3>
+        <p>Durable cross-session memory so the organization learns and never starts from zero.</p>
+      </article>
+      <article class="feat" data-reveal data-d="3">
+        <span class="feat-i" data-glyph="orchestrate"></span>
+        <h3>Agent orchestration</h3>
+        <p>Agent-to-agent delegation and handoff turn many models into one coordinated team.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="band how" id="how">
+  <div class="wrap">
+    <div class="band-head">
+      <span class="kicker" data-reveal>How it works</span>
+      <h2 class="h2" data-reveal>Intent in, <span class="muted">coordinated work out.</span></h2>
+    </div>
+    <ol class="flow" data-flow>
+      <li class="flow-step" data-reveal><span class="fs-n">1</span><span class="fs-l">Request / goal</span></li>
+      <li class="flow-step" data-reveal data-d="1"><span class="fs-n">2</span><span class="fs-l">Orchestration</span></li>
+      <li class="flow-step" data-reveal data-d="2"><span class="fs-n">3</span><span class="fs-l">Specialist agents</span></li>
+      <li class="flow-step" data-reveal data-d="3"><span class="fs-n">4</span><span class="fs-l">Model gateway</span></li>
+      <li class="flow-step accent" data-reveal data-d="4"><span class="fs-n">5</span><span class="fs-l">Best model</span></li>
+    </ol>
+    <p class="how-note measure" data-reveal>
+      <strong>Model-agnostic routing with automatic failover.</strong> If the primary model is down,
+      rate-limited, or out of credits, the gateway fails over to the next model in the chain automatically —
+      the agent never stalls and the work continues.
+    </p>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="band who" id="who">
+  <div class="wrap">
+    <div class="band-head">
+      <span class="kicker" data-reveal>Who it's for</span>
+      <h2 class="h2 measure" data-reveal>Enterprise leverage, <span class="muted">without enterprise headcount.</span></h2>
+    </div>
+    <div class="grid-3 audience">
+      <article class="aud" data-reveal>
+        <h3>Solo founders</h3>
+        <p>One person who needs to operate like a team — build, ship, market, and run ops at once.</p>
+      </article>
+      <article class="aud" data-reveal data-d="1">
+        <h3>Lean startups</h3>
+        <p>Small teams that want to multiply output and move faster than their headcount should allow.</p>
+      </article>
+      <article class="aud" data-reveal data-d="2">
+        <h3>Design &amp; creative studios</h3>
+        <p>Studios that need engineering and operations muscle on demand without hiring a full back office.</p>
+      </article>
+    </div>
+    <p class="wedge" data-reveal><span class="mark">The wedge:</span> the millions of one- and two-person companies that can't afford a team — but can now run one.</p>
+  </div>
+</section>
+
+<!-- WHY WE WIN (dark) -->
+<section class="band why dark" id="why">
+  <div class="wrap">
+    <div class="band-head">
+      <span class="kicker" data-reveal>Why we win</span>
+      <h2 class="h2" data-reveal>What makes notahuman different.</h2>
+    </div>
+    <div class="grid-2 diffs">
+      <article class="diff" data-reveal><h3><span>01</span> True multi-agent coordination</h3><p>Agents delegate and hand off work to each other — not a single model pretending to be many.</p></article>
+      <article class="diff" data-reveal data-d="1"><h3><span>02</span> Model-agnostic routing + failover</h3><p>Swap or stack any provider; ordered fallbacks keep the system running through outages and limits.</p></article>
+      <article class="diff" data-reveal data-d="2"><h3><span>03</span> Verifiable, policy-governed behavior</h3><p>Actions follow explicit precepts with evidence requirements — auditable, not a black box.</p></article>
+      <article class="diff" data-reveal data-d="3"><h3><span>04</span> Durable institutional memory</h3><p>Persistent cross-session memory compounds over time instead of resetting every chat.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="band stats" id="status">
+  <div class="wrap">
+    <span class="kicker" data-reveal>Where we are</span>
+    <h2 class="h2" data-reveal>A live system — <span class="muted">early, honest, and running.</span></h2>
+    <div class="stat-row">
+      <div class="stat" data-reveal><span class="stat-n" data-count="6">0</span><span class="stat-l">specialized agents in the C-suite</span></div>
+      <div class="stat" data-reveal data-d="1"><span class="stat-n" data-count="1">0</span><span class="stat-l">self-hosted gateway, many providers</span></div>
+      <div class="stat" data-reveal data-d="2"><span class="stat-n" data-prefix="$" data-count="0">$0</span><span class="stat-l">raised — bootstrapped and self-funded</span></div>
+      <div class="stat" data-reveal data-d="3"><span class="stat-n" data-count="2022" data-plain="1">2022</span><span class="stat-l">incorporated, Human Design LLC</span></div>
+    </div>
+    <p class="stats-note measure" data-reveal>Built and operated by its own agents — the platform that runs notahuman is the product we're bringing to other founders. We're pre-revenue and early, and the system already does real work every day.</p>
+  </div>
+</section>
+
+<!-- VISION / CONTACT (dark) -->
+<section class="band vision dark" id="contact">
+  <div class="wrap vision-grid">
+    <div class="vision-lead">
+      <span class="kicker" data-reveal>Vision</span>
+      <h2 class="h2 xl" data-reveal>An AI workforce <em>for every founder.</em></h2>
+      <p class="band-lede measure" data-reveal>notahuman makes the output of a whole company available to anyone with an idea — coordinated, governed, and running on the best models available.</p>
+      <div class="contact-actions" data-reveal>
+        <a class="btn btn-light" href="mailto:derek.arrington@justbeahuman.com" data-magnetic>Start a conversation<i class="arr">→</i></a>
+      </div>
+    </div>
+    <aside class="founder" data-reveal>
+      <p class="founder-q">"Building notahuman as both the platform and the proof: an AI company that builds and runs itself."</p>
+      <div class="founder-by">
+        <strong>Derek Arrington</strong>
+        <span>Founder · Human Design LLC · Brooklyn, NY</span>
+      </div>
+      <ul class="founder-links">
+        <li><a href="mailto:derek.arrington@justbeahuman.com">derek.arrington@justbeahuman.com</a></li>
+        <li><a href="https://thehumandesigngroup.com">thehumandesigngroup.com</a></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <span class="foot-brand">Human Design Group</span>
+    <span class="foot-meta">© <span data-year>2026</span> Human Design LLC · Brooklyn, New York</span>
+    <a href="#top" class="foot-top" data-magnetic>Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
