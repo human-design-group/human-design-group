@@ -546,7 +546,8 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
   background: #111A20;
   border: 1px dashed var(--cyan);
   border-radius: var(--rad-sm);
-  padding: 16px;
+  padding: 20px 16px 14px;
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
   gap: 8px;
