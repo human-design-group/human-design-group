@@ -3,256 +3,404 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>notahuman (nahOS) — The Autonomous Digital Product Agency &amp; AgentOS · Human Design Group</title>
+<title>nahOS (notahuman) — The Autonomous Digital Product Agency &amp; AgentOS · Human Design Group</title>
 <meta name="description" content="nahOS is the first design-native AgentOS and autonomous digital product agency — executing ideation, Figma design, engineering, deployment, launch, marketing, and continuous iteration behind one governed platform. Built by Human Design Group." />
-<meta name="theme-color" content="#16181c" />
-<meta property="og:title" content="notahuman (nahOS) — The Autonomous Digital Product Agency" />
+<meta name="theme-color" content="#080F12" />
+<meta property="og:title" content="nahOS (notahuman) — The Autonomous Digital Product Agency" />
 <meta property="og:description" content="An end-to-end design-native AgentOS executing ideation, Figma design, dev, deployment, launch, marketing, and iteration. Built by Human Design Group." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://thehumandesigngroup.com" />
 <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
 
-<!-- HEADER -->
+<!-- SITE HEADER -->
 <header class="site-head" data-head>
   <div class="wrap head-inner">
     <a class="brand" href="#top" aria-label="Human Design Group — home">
       <img src="./assets/logo/hdg-logo.png"
            srcset="./assets/logo/hdg-logo.png 1x, ./assets/logo/hdg-logo@2x.png 2x, ./assets/logo/hdg-logo@3x.png 3x"
            alt="Human Design Group" class="brand-mark" />
+      <span class="brand-title">nahOS</span>
+      <span class="brand-badge">AgentOS v6.0</span>
     </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#problem" class="nav-link"><span>Why</span></a>
+    <nav class="nav" aria-label="Primary Navigation">
       <a href="#platform" class="nav-link"><span>Platform</span></a>
-      <a href="#how" class="nav-link"><span>How it works</span></a>
-      <a href="#who" class="nav-link"><span>Who it's for</span></a>
+      <a href="#design-layer" class="nav-link"><span>Design Layer</span></a>
+      <a href="#sdlc" class="nav-link"><span>SDLC Engine</span></a>
+      <a href="#fleet" class="nav-link"><span>Agent Fleet</span></a>
+      <a href="#vision" class="nav-link"><span>Vision</span></a>
     </nav>
-    <a href="#contact" class="btn btn-sm" data-magnetic>Get in touch</a>
-    <button class="menu-toggle" aria-label="Menu" aria-expanded="false" data-menu></button>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-sm btn-primary">Get in Touch</a>
+    </div>
   </div>
 </header>
 
 <main id="main">
 <span id="top"></span>
 
-<!-- HERO -->
+<!-- HERO SECTION WITH LIVE STUDIO COCKPIT -->
 <section class="hero" id="hero">
-  <canvas class="hero-net" data-net aria-hidden="true"></canvas>
-  <div class="wrap hero-inner">
-    <p class="eyebrow reveal" data-reveal>
-      <span class="dot"></span> notahuman (nahOS) <em>— a Human Design Group platform</em>
-    </p>
-    <h1 class="hero-title">
-      <span class="line reveal" data-reveal data-d="1">The autonomous</span>
-      <span class="line reveal" data-reveal data-d="2">digital product <span class="ink-accent">agency.</span></span>
-    </h1>
-    <p class="hero-lede reveal" data-reveal data-d="3">
-      An end-to-end design-native AgentOS executing the complete product lifecycle —
-      from ideation and feasibility to Figma design, development, deployment,
-      launch, marketing, and continuous iteration.
-    </p>
-    <div class="hero-cta reveal" data-reveal data-d="4">
-      <a href="#contact" class="btn" data-magnetic>Get in touch<i class="arr">→</i></a>
-      <a href="#platform" class="btn btn-ghost" data-magnetic>See the platform</a>
+  <canvas class="hero-canvas" data-net aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="live-pulse"></span>
+        <span>nahOS Live Platform &nbsp;·&nbsp; Autonomous SDLC</span>
+      </div>
+      <h1 class="hero-title">
+        The autonomous <br>
+        digital product <br>
+        <span class="serif-italic">agency.</span>
+      </h1>
+      <p class="hero-lede">
+        An end-to-end, design-native AgentOS executing the complete product lifecycle — from ideation and Figma design to multi-agent development, serverless deployment, store release, and growth marketing.
+      </p>
+      <div class="hero-actions">
+        <a href="#sdlc" class="btn btn-yellow">Explore 9-Stage SDLC</a>
+        <a href="#design-layer" class="btn btn-ghost">See Design Layer</a>
+      </div>
+    </div>
+
+    <!-- LIVE STUDIO COCKPIT SIMULATOR -->
+    <div class="cockpit-frame">
+      <div class="cockpit-bar">
+        <div class="cockpit-dots">
+          <span class="cockpit-dot r"></span>
+          <span class="cockpit-dot y"></span>
+          <span class="cockpit-dot g"></span>
+        </div>
+        <div class="cockpit-tabs">
+          <span class="cockpit-tab active" data-cockpit-tab="figma">Figma Canvas</span>
+          <span class="cockpit-tab" data-cockpit-tab="stream">Agent Stream</span>
+          <span class="cockpit-tab" data-cockpit-tab="preview">Live WebUI</span>
+        </div>
+        <div class="cockpit-status">
+          <span class="live-pulse"></span>
+          <span>OmniRoute 12ms</span>
+        </div>
+      </div>
+
+      <div class="cockpit-viewport">
+        <!-- Figma Frame View -->
+        <div class="cockpit-figma" id="view-figma">
+          <div class="figma-header">
+            <span>Figma Frame: #Product-Hero</span>
+            <span class="figma-tag">AutoLayout</span>
+          </div>
+          <div class="figma-card-mock">
+            <span style="font-family:'Calvert',serif;font-size:18px;font-weight:700;color:#FFF;">nahOS Design System</span>
+            <span style="font-size:12px;color:var(--text-secondary);">Calvert MT 700 / Aktiv Grotesk 400</span>
+            <div class="token-swatches">
+              <span class="token-swatch" style="background:#0094D9;" title="Brand Cyan"></span>
+              <span class="token-swatch" style="background:#005881;" title="Dark Cyan"></span>
+              <span class="token-swatch" style="background:#FFF200;" title="Electric Yellow"></span>
+              <span class="token-swatch" style="background:#080F12;" title="Obsidian Canvas"></span>
+            </div>
+          </div>
+          <div style="font-size:11px;color:var(--cyan);font-family:var(--font-mono);">
+            ✓ Bi-directional Figma tokens synced to CSS Custom Properties
+          </div>
+        </div>
+
+        <!-- Terminal Stream View -->
+        <div class="cockpit-terminal" id="view-stream">
+          <div class="term-line">
+            <span class="term-role role-uno">Uno CoS</span>
+            <span class="term-text">Decomposing product PRD into 9-stage SDLC graph...</span>
+          </div>
+          <div class="term-line">
+            <span class="term-role role-astro">Astro Design</span>
+            <span class="term-text">Live WebUI connected to Figma Canvas node #0:412</span>
+          </div>
+          <div class="term-line">
+            <span class="term-role role-omo">Omo Dev</span>
+            <span class="term-text">Created git worktree: ~/worktrees/feat-product-ui</span>
+          </div>
+          <div class="term-line">
+            <span class="term-role role-omo">Omo Dev</span>
+            <span class="term-text">Automated test suite passed: 14/14 tests verified.</span>
+          </div>
+          <div class="term-line">
+            <span class="term-role role-uno">Uno CoS</span>
+            <span class="term-text">Edge deploy verified on Cloudflare Workers + Google Vertex AI</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="hero-scroll reveal" data-reveal data-d="5"><span>Scroll</span><i></i></div>
 </section>
 
-<!-- PROBLEM -->
-<section class="band problem" id="problem">
+<!-- THE 9-STAGE CLOSED-LOOP SDLC -->
+<section class="band" id="sdlc" style="border-top: 1px solid var(--border-solid);">
   <div class="wrap">
     <div class="band-head">
-      <span class="kicker" data-reveal>The problem</span>
-      <h2 class="h2 measure" data-reveal>AI tools generate code. <span class="muted">Real products require an agency.</span></h2>
+      <span class="kicker">Autonomous SDLC Engine</span>
+      <h2 class="h2">The 9-Stage Product Lifecycle. <br><em>From Napkin Sketch to Market.</em></h2>
+      <p class="band-lede" style="margin-top:14px;">
+        Unlike terminal-only coding bots that solve isolated functions, nahOS executes the entire cross-functional workflow of an elite 10-person agency.
+      </p>
     </div>
-    <ol class="grid-3 problems">
-      <li class="prob" data-reveal>
-        <span class="num">01</span>
-        <h3>Chatbots can't design</h3>
-        <p>Coding agents operate blind in text terminals. They are detached from visual canvases, Figma tokens, paper sketches, and UX fidelity.</p>
-      </li>
-      <li class="prob" data-reveal data-d="1">
-        <span class="num">02</span>
-        <h3>Fragmented SDLC handoffs</h3>
-        <p>Bridging PRDs, wireframes, frontend design, CI/CD, app store distribution, and growth marketing is completely manual today.</p>
-      </li>
-      <li class="prob" data-reveal data-d="2">
-        <span class="num">03</span>
-        <h3>The agency headcount barrier</h3>
-        <p>Solo founders and lean teams can't hire an 8-to-12 person multidisciplinary agency to build, launch, and iterate digital products.</p>
-      </li>
-    </ol>
-  </div>
-</section>
 
-<!-- SOLUTION -->
-<section class="band solution" id="solution">
-  <div class="wrap">
-    <div class="band-head center">
-      <span class="kicker" data-reveal>The solution</span>
-      <h2 class="h2 xl" data-reveal>Not just code gen. <em>An autonomous digital product agency.</em></h2>
-      <p class="band-lede measure" data-reveal>nahOS coordinates a cross-functional fleet of specialized AI agents that execute every phase of the digital product lifecycle — ideation, feasibility, prototyping, design, development, deployment, launch, marketing, and continuous iteration.</p>
-    </div>
-    <div class="grid-3 pillars">
-      <article class="pillar" data-reveal>
-        <h3>Native design layer</h3>
-        <p>Live WebUIs for Figma and Paper. Translating visual canvases directly into code.</p>
-      </article>
-      <article class="pillar" data-reveal data-d="1">
-        <h3>Closed-loop SDLC</h3>
-        <p>From napkin sketch to production deployment, store release, and growth marketing.</p>
-      </article>
-      <article class="pillar" data-reveal data-d="2">
-        <h3>Governed by design</h3>
-        <p>Precept-enforced execution with automated verification test suites for every pull request.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <div class="sdlc-container">
+      <div class="sdlc-nav">
+        <button class="sdlc-btn active" data-stage="0">
+          <span class="sdlc-step-n">01</span>
+          <span class="sdlc-step-title">Ideation</span>
+        </button>
+        <button class="sdlc-btn" data-stage="1">
+          <span class="sdlc-step-n">02</span>
+          <span class="sdlc-step-title">Feasibility</span>
+        </button>
+        <button class="sdlc-btn" data-stage="2">
+          <span class="sdlc-step-n">03</span>
+          <span class="sdlc-step-title">Prototyping</span>
+        </button>
+        <button class="sdlc-btn" data-stage="3">
+          <span class="sdlc-step-n">04</span>
+          <span class="sdlc-step-title">Design Layer</span>
+        </button>
+        <button class="sdlc-btn" data-stage="4">
+          <span class="sdlc-step-n">05</span>
+          <span class="sdlc-step-title">Development</span>
+        </button>
+        <button class="sdlc-btn" data-stage="5">
+          <span class="sdlc-step-n">06</span>
+          <span class="sdlc-step-title">Deployment</span>
+        </button>
+        <button class="sdlc-btn" data-stage="6">
+          <span class="sdlc-step-n">07</span>
+          <span class="sdlc-step-title">Launch</span>
+        </button>
+        <button class="sdlc-btn" data-stage="7">
+          <span class="sdlc-step-n">08</span>
+          <span class="sdlc-step-title">Marketing</span>
+        </button>
+        <button class="sdlc-btn" data-stage="8">
+          <span class="sdlc-step-n">09</span>
+          <span class="sdlc-step-title">Iteration</span>
+        </button>
+      </div>
 
-<!-- PLATFORM (dark) -->
-<section class="band platform dark" id="platform">
-  <div class="wrap">
-    <div class="band-head">
-      <span class="kicker" data-reveal>The platform</span>
-      <h2 class="h2" data-reveal>One stack: <span class="seq"><span>design</span>, <span>route</span>, <span>govern</span>, <span>remember</span>, <span>orchestrate</span>.</span></h2>
-    </div>
-    <div class="grid-2 features">
-      <article class="feat" data-reveal>
-        <span class="feat-i" data-glyph="gateway"></span>
-        <h3>Live WebUIs for Figma &amp; Paper</h3>
-        <p>Bidirectional canvas integration connecting visual design tools, design tokens, and live interactive web previews directly into production code.</p>
-      </article>
-      <article class="feat" data-reveal data-d="1">
-        <span class="feat-i" data-glyph="shield"></span>
-        <h3>Model gateway (OmniRoute)</h3>
-        <p>A self-hosted gateway routing across frontier models (Google Vertex AI, NVIDIA NIM, and fallbacks) with automatic, ordered failover.</p>
-      </article>
-      <article class="feat" data-reveal data-d="2">
-        <span class="feat-i" data-glyph="memory"></span>
-        <h3>Persistent memory (nah-knows)</h3>
-        <p>Durable cross-session hybrid vector (pgvector) memory retaining design system tokens, brand guidelines, and architectural post-mortems.</p>
-      </article>
-      <article class="feat" data-reveal data-d="3">
-        <span class="feat-i" data-glyph="orchestrate"></span>
-        <h3>Multi-agent worktree isolation</h3>
-        <p>Agents work in parallel across dedicated git worktrees, verifying their own code against test suites before generating pull requests.</p>
-      </article>
+      <div class="sdlc-display" id="sdlc-display-card">
+        <div class="sdlc-info">
+          <h3 id="sdlc-stage-title">04. The Native Design Layer (Figma &amp; Paper)</h3>
+          <p id="sdlc-stage-desc">
+            Autonomous bi-directional synchronization with Figma canvases and Paper sketches. Translating design tokens, typography scales, layout frames, and responsive variables directly into production-grade HTML/CSS with Google Vertex AI multimodal verification.
+          </p>
+          <div class="sdlc-tags" id="sdlc-stage-tags">
+            <span class="sdlc-tag">Figma API / MCP</span>
+            <span class="sdlc-tag">Paper Live WebUIs</span>
+            <span class="sdlc-tag">Multimodal Vision</span>
+            <span class="sdlc-tag">Design Token Governance</span>
+          </div>
+        </div>
+        <div class="sdlc-visual" id="sdlc-stage-visual">
+          <pre><code>// nahOS Design-to-Code Pipeline
+const tokens = await nahFigma.getVariables();
+const comp = await nahPaper.renderSidecar(tokens);
+verifyVisualParity(comp, { threshold: 0.98 });
+// Status: Pixel-perfect parity verified</code></pre>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="band how" id="how">
+<!-- BENTO GRID: DESIGN MOAT & ARCHITECTURAL ADVANTAGES -->
+<section class="band" id="design-layer" style="background: rgba(14, 22, 27, 0.4);">
   <div class="wrap">
     <div class="band-head">
-      <span class="kicker" data-reveal>How it works</span>
-      <h2 class="h2" data-reveal>The 9-Stage SDLC: <span class="muted">from napkin to market.</span></h2>
+      <span class="kicker">The Competitive Moat</span>
+      <h2 class="h2">Why nahOS Wins. <br><em>Design-First, Not Terminal-Bound.</em></h2>
     </div>
-    <ol class="flow" data-flow>
-      <li class="flow-step" data-reveal><span class="fs-n">1</span><span class="fs-l">Ideation</span></li>
-      <li class="flow-step" data-reveal data-d="1"><span class="fs-n">2</span><span class="fs-l">Design (Figma)</span></li>
-      <li class="flow-step" data-reveal data-d="2"><span class="fs-n">3</span><span class="fs-l">Agent Dev</span></li>
-      <li class="flow-step" data-reveal data-d="3"><span class="fs-n">4</span><span class="fs-l">Edge Deploy</span></li>
-      <li class="flow-step accent" data-reveal data-d="4"><span class="fs-n">5</span><span class="fs-l">Launch &amp; Growth</span></li>
-    </ol>
-    <p class="how-note measure" data-reveal>
-      <strong>A closed-loop autonomous product lifecycle:</strong> Ideation → Feasibility → Prototyping → Design → Development → Deployment → Launch → Marketing → Continuous Iteration. Agents maintain persistent state across stages with live visual previews.
-    </p>
+
+    <div class="bento-grid">
+      <!-- Card 1: Design Layer (Span 8) -->
+      <div class="bento-card bento-col-8">
+        <div>
+          <span class="tag-pill">Native Design Layer</span>
+          <h3>Live WebUIs for Figma and Paper</h3>
+          <p>
+            Coding agents that operate solely in text terminals fail because real digital products require visual intuition, layout restraint, and brand coherence. nahOS natively connects to Figma canvases and Paper sketch interfaces, allowing founders to guide creative direction while agents execute living code in interactive browser sidecars.
+          </p>
+        </div>
+        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+          <span class="brand-badge">Bi-Directional Figma Sync</span>
+          <span class="brand-badge">Multimodal Visual QA</span>
+          <span class="brand-badge">Interactive Live Previews</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Multi-Agent Isolation (Span 4) -->
+      <div class="bento-card bento-col-4">
+        <div>
+          <span class="tag-pill">Engineered Concurrency</span>
+          <h3>Git Worktree Isolation</h3>
+          <p>
+            No merge collisions or race conditions. Each agent operates in its own dedicated, sandboxed git worktree with strict verification test suites before submitting pull requests.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Model Gateway (Span 4) -->
+      <div class="bento-card bento-col-4">
+        <div>
+          <span class="tag-pill">Zero-Downtime Resilience</span>
+          <h3>OmniRoute Gateway</h3>
+          <p>
+            Sub-second dynamic inference routing across Google Vertex AI (Gemini 1.5 Pro &amp; Flash), NVIDIA NIM, and fallback providers with automatic ordered failover.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4: Institutional Memory (Span 8) -->
+      <div class="bento-card bento-col-8">
+        <div>
+          <span class="tag-pill">Second Brain</span>
+          <h3>Durable Institutional Memory (nah-knows)</h3>
+          <p>
+            A persistent hybrid PostgreSQL <code>pgvector</code> (1024-dim) and BM25 knowledge graph retaining design system tokens, brand specifications, architectural decisions, and post-mortems across all sessions.
+          </p>
+        </div>
+        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+          <span class="brand-badge">pgvector Embeddings</span>
+          <span class="brand-badge">Reciprocal Rank Fusion</span>
+          <span class="brand-badge">Cross-Session Recall</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- WHO -->
-<section class="band who" id="who">
+<!-- AGENT FLEET: THE AUTONOMOUS C-SUITE -->
+<section class="band" id="fleet">
   <div class="wrap">
     <div class="band-head">
-      <span class="kicker" data-reveal>Who it's for</span>
-      <h2 class="h2 measure" data-reveal>Enterprise leverage, <span class="muted">without enterprise headcount.</span></h2>
+      <span class="kicker">The Autonomous Team</span>
+      <h2 class="h2">A Coordinated C-Suite. <br><em>Specialized Agents, Not Single Prompts.</em></h2>
+      <p class="band-lede" style="margin-top:14px;">
+        nahOS replaces a $1.5M agency payroll with specialized autonomous agent personas operating in harmony.
+      </p>
     </div>
-    <div class="grid-3 audience">
-      <article class="aud" data-reveal>
-        <h3>Solo founders</h3>
-        <p>One person who needs to operate like an entire agency — ideate, design in Figma, develop, deploy, and market.</p>
-      </article>
-      <article class="aud" data-reveal data-d="1">
-        <h3>Lean startups</h3>
-        <p>Small teams that want to collapse 6 months of agency development into 7 days of autonomous agent orchestration.</p>
-      </article>
-      <article class="aud" data-reveal data-d="2">
-        <h3>Design &amp; creative studios</h3>
-        <p>Creative directors who want to build and launch production software directly from Figma and Paper without hiring back-office dev teams.</p>
-      </article>
-    </div>
-    <p class="wedge" data-reveal><span class="mark">The wedge:</span> the millions of single-operator companies that can't afford a $1.5M agency — but can now run one.</p>
-  </div>
-</section>
 
-<!-- WHY WE WIN (dark) -->
-<section class="band why dark" id="why">
-  <div class="wrap">
-    <div class="band-head">
-      <span class="kicker" data-reveal>Why we win</span>
-      <h2 class="h2" data-reveal>What makes notahuman different.</h2>
-    </div>
-    <div class="grid-2 diffs">
-      <article class="diff" data-reveal><h3><span>01</span> Native design layer</h3><p>Live WebUIs for Figma and Paper. Translating visual canvases directly into living code, not terminal-only prompts.</p></article>
-      <article class="diff" data-reveal data-d="1"><h3><span>02</span> Complete agency lifecycle</h3><p>Executes every stage from napkin sketch to production deployment, store release, and growth marketing.</p></article>
-      <article class="diff" data-reveal data-d="2"><h3><span>03</span> Multi-agent worktree isolation</h3><p>Agents work in parallel across dedicated git worktrees with strict merge protocols and automated test verification.</p></article>
-      <article class="diff" data-reveal data-d="3"><h3><span>04</span> Durable institutional memory</h3><p>Persistent hybrid vector (pgvector) memory retains design tokens, architecture, and brand guidelines across sessions.</p></article>
-    </div>
-  </div>
-</section>
+    <div class="agent-grid">
+      <!-- Uno -->
+      <div class="agent-card">
+        <div class="agent-header">
+          <div class="agent-avatar">U</div>
+          <span class="agent-status-pill">Active</span>
+        </div>
+        <div class="agent-name">Uno</div>
+        <div class="agent-role">Chief of Staff &amp; Orchestration</div>
+        <p class="agent-desc">
+          High-level project decomposition, task graph routing, executive stakeholder alignment, and cross-agent coordination.
+        </p>
+      </div>
 
-<!-- STATS -->
-<section class="band stats" id="status">
-  <div class="wrap">
-    <span class="kicker" data-reveal>Where we are</span>
-    <h2 class="h2" data-reveal>A live system — <span class="muted">early, honest, and running.</span></h2>
+      <!-- Astro -->
+      <div class="agent-card">
+        <div class="agent-header">
+          <div class="agent-avatar" style="background:linear-gradient(135deg, var(--yellow), #E5A800);color:#080F12;">A</div>
+          <span class="agent-status-pill">Active</span>
+        </div>
+        <div class="agent-name">Astro</div>
+        <div class="agent-role">AI Systems &amp; Design Engineer</div>
+        <p class="agent-desc">
+          Live WebUIs, Figma token ingestion, Paper canvas translation, design system integrity, and multimodal visual testing.
+        </p>
+      </div>
+
+      <!-- Omo -->
+      <div class="agent-card">
+        <div class="agent-header">
+          <div class="agent-avatar" style="background:linear-gradient(135deg, var(--green), #1E9E52);">O</div>
+          <span class="agent-status-pill">Active</span>
+        </div>
+        <div class="agent-name">Omo</div>
+        <div class="agent-role">Lead Developer &amp; Architect</div>
+        <p class="agent-desc">
+          System implementation, git worktree orchestration, test-driven validation, and adversarial automated code reviews.
+        </p>
+      </div>
+
+      <!-- Humano -->
+      <div class="agent-card">
+        <div class="agent-header">
+          <div class="agent-avatar" style="background:linear-gradient(135deg, #FF5F56, var(--red));">H</div>
+          <span class="agent-status-pill">Active</span>
+        </div>
+        <div class="agent-name">Humano</div>
+        <div class="agent-role">Community &amp; Experience</div>
+        <p class="agent-desc">
+          Brand storytelling, customer sentiment synthesis, launch asset curation, and user experience feedback loops.
+        </p>
+      </div>
+    </div>
+
+    <!-- STATS ROW -->
     <div class="stat-row">
-      <div class="stat" data-reveal><span class="stat-n" data-count="6">0</span><span class="stat-l">specialized agents in the C-suite</span></div>
-      <div class="stat" data-reveal data-d="1"><span class="stat-n" data-count="1">0</span><span class="stat-l">self-hosted gateway, many providers</span></div>
-      <div class="stat" data-reveal data-d="2"><span class="stat-n" data-prefix="$" data-count="0">$0</span><span class="stat-l">raised — bootstrapped and self-funded</span></div>
-      <div class="stat" data-reveal data-d="3"><span class="stat-n" data-count="2022" data-plain="1">2022</span><span class="stat-l">incorporated, Human Design LLC</span></div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="6">0</span>
+        <span class="stat-lbl">Autonomous Agents Active Daily</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-lbl">Proprietary Founder-Owned IP</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" style="color:var(--yellow);">Inception</span>
+        <span class="stat-lbl">NVIDIA Inception Program Member</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2022</span>
+        <span class="stat-lbl">Incorporated, Human Design LLC (NY DOS 6637911)</span>
+      </div>
     </div>
-    <p class="stats-note measure" data-reveal>Built and operated by its own agents — the platform that runs notahuman is the product we're bringing to other founders. Human Design LLC is an active member of the NVIDIA Inception program, running in production daily.</p>
   </div>
 </section>
 
-<!-- VISION / CONTACT (dark) -->
-<section class="band vision dark" id="contact">
+<!-- VISION & FOUNDER SECTION -->
+<section class="band" id="vision" style="background: rgba(14, 22, 27, 0.6); border-top: 1px solid var(--border-solid);">
   <div class="wrap vision-grid">
-    <div class="vision-lead">
-      <span class="kicker" data-reveal>Vision</span>
-      <h2 class="h2 xl" data-reveal>An autonomous agency <em>for every founder.</em></h2>
-      <p class="band-lede measure" data-reveal>nahOS puts the output of an entire multidisciplinary digital product agency into the hands of any designer, engineer, or visionary — from napkin sketch to store launch and continuous iteration.</p>
-      <div class="contact-actions" data-reveal>
-        <a class="btn btn-light" href="mailto:derek.arrington@justbeahuman.com" data-magnetic>Start a conversation<i class="arr">→</i></a>
+    <div>
+      <span class="kicker">Vision</span>
+      <h2 class="h2">An Autonomous Agency <br><em>For Every Founder.</em></h2>
+      <p class="band-lede" style="margin-top:16px;">
+        nahOS makes the complete output of an elite digital product agency available to any designer, engineer, or visionary — governed, verified, and running on frontier cloud infrastructure.
+      </p>
+      <div style="margin-top:28px;">
+        <a class="btn btn-yellow" href="mailto:derek.arrington@justbeahuman.com">Start a Conversation</a>
       </div>
     </div>
-    <aside class="founder" data-reveal>
-      <p class="founder-q">"Building nahOS as both the platform and the proof: an autonomous digital product agency that builds and runs itself."</p>
-      <div class="founder-by">
-        <strong>Derek Arrington</strong>
-        <span>Founder · Human Design LLC · Brooklyn, NY</span>
-      </div>
+
+    <div class="founder-box" id="contact">
+      <p class="founder-quote">
+        "Building nahOS as both the platform and the proof: an autonomous digital product agency that builds and runs itself."
+      </p>
+      <div class="founder-name">Derek E. Arrington</div>
+      <div class="founder-title">Founder, Systems Architect &amp; Sole Member · Human Design LLC</div>
       <ul class="founder-links">
         <li><a href="mailto:derek.arrington@justbeahuman.com">derek.arrington@justbeahuman.com</a></li>
         <li><a href="https://thehumandesigngroup.com">thehumandesigngroup.com</a></li>
+        <li>Brooklyn, New York, USA</li>
       </ul>
-    </aside>
+    </div>
   </div>
 </section>
 </main>
 
-<!-- FOOTER -->
+<!-- SITE FOOTER -->
 <footer class="site-foot">
   <div class="wrap foot-inner">
-    <span class="foot-brand">Human Design Group</span>
-    <span class="foot-meta">© <span data-year>2026</span> Human Design LLC · Brooklyn, New York</span>
-    <a href="#top" class="foot-top" data-magnetic>Back to top ↑</a>
+    <div>
+      <strong style="font-family:'Calvert',serif;font-size:1.1rem;color:#FFF;">Human Design Group</strong>
+      <span style="display:block;color:var(--text-dim);font-size:0.8rem;margin-top:2px;">
+        © <span data-year>2026</span> Human Design LLC (NY DOS ID: 6637911) · All Rights Reserved.
+      </span>
+    </div>
+    <a href="#top" class="btn btn-sm btn-ghost">Back to Top ↑</a>
   </div>
 </footer>
 
